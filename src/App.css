@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./assets/pexels-th2city-2775272.jpg') center / cover no-repeat;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1b1b1b;
+  border-bottom: 2px solid #c9a227;
+}
+.navbar nav a {
+  color: #eee;
+  text-decoration: none;
+  margin-left: 1.2rem;
+}
+.navbar nav a.active {
+  color: #c9a227;
+  font-weight: bold;
+}
+
+main {
+  min-height: 70vh;
+}
+.hero {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  background: #c9a227;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: #1b1b1b;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.form input,
+.form select {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1b1b1b;
+  color: #eee;
+}
+.ok {
+  color: #4caf50;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1b1b1b;
+  margin-top: 2rem;
+}
